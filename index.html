@@ -9,14 +9,21 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Search for a City..." />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Search for a City..."
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
       </header>
 
       <main>
-        <h1 id="cityEmoji">☀️<br />Paris, France</h1>
+        <h1>
+          <div id="cityEmoji">☀️</div>
+          Paris, France
+        </h1>
         <p id="cityDateTime">Wednesday, December 4th<br />14:55</p>
         <p id="currentTemp">18°C</p>
         <p id="currentWeather">Humidity: 60%<br />Wind: 8km/h</p>
