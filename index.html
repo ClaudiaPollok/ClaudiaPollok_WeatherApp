@@ -9,10 +9,11 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Search for a City..."
+            id="search-form-input"
             class="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
@@ -22,8 +23,9 @@
       <main>
         <div class="weather-app-data">
           <h1>
-            <div id="cityEmoji">☀️</div>
-            Paris, France
+            <span id="cityEmoji">☀️</span>
+            <br />
+            <span id="cityName">Paris</span>, <span id="cityCountry">France</span>
           </h1>
           <p id="cityDateTime">Wednesday, December 4th<br />14:55</p>
           <div class="current-weather">
@@ -60,5 +62,6 @@
         and hosted on <a href="https://github.com/ClaudiaPollok">Github</a>.
       </footer>
     </div>
-  </body>
+    <script src="src/index.js"></script>
+      </body>
 </html>
