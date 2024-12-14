@@ -20,14 +20,38 @@
       </header>
 
       <main>
-        <h1>
-          <div id="cityEmoji">☀️</div>
-          Paris, France
-        </h1>
-        <p id="cityDateTime">Wednesday, December 4th<br />14:55</p>
-        <p id="currentTemp">18°C</p>
-        <p id="currentWeather">Humidity: 60%<br />Wind: 8km/h</p>
-        <p id="forecast">Thu 20°C 🌤️<br />Fri 15°C 🌧️<br />Sat 17°C ☀️</p>
+        <div class="weather-app-data">
+          <h1>
+            <div id="cityEmoji">☀️</div>
+            Paris, France
+          </h1>
+          <p id="cityDateTime">Wednesday, December 4th<br />14:55</p>
+          <div class="current-weather">
+            <p id="currentTemp">18°C</p>
+            <p id="currentAtmosphere">Humidity: 60%<br />Wind: 8km/h</p>
+          </div>
+          <p id="forecast">
+            <div id="forecast1">
+            <span id="forecastDay1">Thu</span>
+            <span id="forecastTemp1">20°C</span>
+            <span id="forecastEmoji1">🌤️</span>
+            </div>
+            <div id="forecast2">
+            <span id="forecastDay2"
+              >Fri</span
+            >
+            <span id="forecastTemp2">15°C</span>
+            <span id="forecastEmoji2">🌧️</span>
+            </div>
+            <div id="forecast3">
+            <span id="forecastDay3"
+              >Sat</span
+            >
+            <span id="forecastTemp3">17°C</span>
+            <span id="forecastEmoji3">☀️</span>
+            </div>
+          </p>
+        </div>
       </main>
 
       <footer>
