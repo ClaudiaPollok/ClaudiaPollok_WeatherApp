@@ -15,6 +15,48 @@ function refreshWeather(response) {
   let currentWindElement = document.querySelector("#currentWind");
   let currentWind = response.data.wind.speed;
   currentWindElement.innerHTML = Math.round(currentWind);
+
+  let currentDescriptionElement = document.querySelector("#currentDescription");
+  currentDescriptionElement.innerHTML = response.data.condition.description;
+
+  let cityDateTimeElement = document.querySelector("#cityDateTime");
+
+  const now = new Date();
+
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[now.getDay()];
+
+  let months = [
+    "January",
+    "Febuary",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  let month = months[now.getMonth()];
+
+  let date = now.getDate();
+
+  let year = now.getFullYear();
+
+  const formattedTime = now.toLocaleTimeString();
+
+  cityDateTimeElement.innerHTML = `${day}, ${month} ${date}, ${year}, ${formattedTime}`;
 }
 
 function searchCity(city) {
