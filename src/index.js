@@ -1,4 +1,10 @@
 function refreshWeather(response) {
+  let iconElement = document.querySelector("#icon");
+  iconElement.innerHTML = `<img
+        src = "${response.data.condition.icon_url}"
+        id="cityEmoji"
+      />`;
+
   let currentTempElement = document.querySelector("#currentTemp");
   let currentTemp = response.data.temperature.current;
   currentTempElement.innerHTML = Math.round(currentTemp);

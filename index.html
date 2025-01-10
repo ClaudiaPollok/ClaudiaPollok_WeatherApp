@@ -24,14 +24,18 @@
       <main>
         <div class="weather-app-data">
           <h1>
-            <span id="cityEmoji">☀️</span>
+            <div id="icon"></div>
             <br />
-            <span id="cityName">Paris</span>,
-            <span id="cityCountry">France</span>
+            <div id="city">
+              <span id="cityName">Paris</span>,
+              <span id="cityCountry">France</span>
+            </div>
           </h1>
           <p id="cityDateTime">Wednesday, December 4th<br />14:55</p>
           <div class="current-weather">
-            <p id="currentTemp">18°C</p>
+            <p id="temperature">
+              <span id="currentTemp">18</span><span id="tempUnit">°C</span>
+            </p>
             <p id="currentAtmosphere">
               Humidity: <span id="currentHumidity">60</span>%<br />Wind:
               <span id="currentWind">8</span>km/h
